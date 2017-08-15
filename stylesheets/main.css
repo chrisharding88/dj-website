@@ -1,0 +1,157 @@
+body {
+	font-family: "futura-pt-bold", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+
+h1 {
+	margin-left: 45px;
+	padding-bottom: 10px;
+
+}
+
+header{
+	
+}
+
+
+#lightning-bolt{
+	width:30px;
+	height:50px;
+}
+
+#lightning-bolt2{
+	width:55px;
+	height:50px;
+}
+
+.navbar-default {
+	background-color: black;
+}
+
+
+.djname {
+	color: white ;
+	font-size: 35px;
+}
+
+
+ #home,
+ #bio,
+ #mixes,
+ #events,
+ #gallery,
+ #contact{
+	color: white;
+}
+
+ #home:hover,
+ #bio:hover,
+ #mixes:hover,
+ #events:hover,
+ #gallery:hover,
+ #contact:hover{
+ 	background-color: white;
+	color: black;
+	transition: all .3s linear;
+
+
+}
+
+
+.navbar-nav {
+	margin-top: 10px;
+	margin-left:900px;
+	font-size: 25px;
+	color: red;
+}
+
+
+.menu-name {
+	text-align: center; 
+	font-size: 65px;
+	margin-top: 55px;
+	color: black;
+
+}
+
+
+
+.copywrite{
+	font-size: 25px;
+	width: 100%;
+	position: fixed;
+	float: left;
+	bottom: 0;
+	border-top: 25px;
+	border-top-style: solid;
+	border-top-color: black;
+	background-color: black;
+	color: white;
+}
+
+
+
+/* Bio */
+#djimage{
+	margin-top: 40px;
+	margin-left: 95px;
+}
+
+.bio{
+	margin-top: 40px;
+	margin-right: 65px;
+}
+
+.img{
+	width: 1260px;
+	height: 753px;
+
+}
+
+
+/* Events */
+table{
+	font-size: 50px;
+	width: 1200px;
+	background-color: black;
+	color: white;
+}
+
+/* Gallery */
+.img-responsive {
+	width: 400px;
+	height: 400px;
+}
+
+/* Contact */
+#logo2{
+	width: 900px;
+	height:900px;
+	margin-left: 10px;
+}
+
+#facebook-logo,
+#instagram-logo,
+#twitter-logo,
+#gmail-logo{
+	width: 100px;
+	height:95px;
+}
+
+.contact-info{
+	float: right;
+	margin-right: 200px;
+	margin-top: 80px;
+
+}
+
+.contact-list li{
+	list-style-type: none;
+	margin-top: 65px;
+	font-size: 40px;
+}
+
+
+
