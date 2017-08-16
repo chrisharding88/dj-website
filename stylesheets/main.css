@@ -12,7 +12,7 @@ h1 {
 }
 
 header{
-	
+
 }
 
 
@@ -36,6 +36,9 @@ header{
 	font-size: 35px;
 }
 
+.carousel-inner img{
+	width: 100%
+}
 
  #home,
  #bio,
@@ -104,11 +107,6 @@ header{
 	margin-right: 65px;
 }
 
-.img{
-	width: 1260px;
-	height: 753px;
-
-}
 
 
 /* Events */
@@ -121,8 +119,8 @@ table{
 
 /* Gallery */
 .img-responsive {
-	width: 400px;
-	height: 400px;
+	width: 800px;
+	height: 600px;
 }
 
 /* Contact */
