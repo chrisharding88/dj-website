@@ -15,6 +15,21 @@ header{
 
 }
 
+#facebook-logo,
+#instagram-logo,
+#twitter-logo,
+#gmail-logo{
+	width: 100px;
+	height:95px;
+	filter: grayscale(1);
+}
+
+.
+
+.logos{
+	display: inline-block;
+}
+
 
 #lightning-bolt{
 	width:30px;
@@ -107,6 +122,12 @@ header{
 	margin-right: 65px;
 }
 
+/* Mixes */
+.mix-collection {
+	min-height: 1290px;
+}
+
+
 
 
 /* Events */
@@ -127,21 +148,20 @@ table{
 #logo2{
 	width: 900px;
 	height:900px;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
-#facebook-logo,
-#instagram-logo,
-#twitter-logo,
-#gmail-logo{
-	width: 100px;
-	height:95px;
-}
 
-.contact-info{
+
+
+.inquiries-title{
+	font-size:50px;
+}
+.inquiries{
 	float: right;
-	margin-right: 200px;
+	margin-right: 120px;
 	margin-top: 80px;
+	font-size: 30px;
 
 }
 

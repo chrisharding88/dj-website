@@ -44,20 +44,48 @@
 
 	    	<img src="../img/logo2.jpg" id="logo2" alt = "Photo of a secondary logo">
 
-	    	<section class="contact-info">
-	    		<ul class="contact-list">
-	    			<li><a href="https://www.facebook.com/DJChrisainBolt"><img src="../img/facebook-logo.png" id="facebook-logo">Facebook: DJ Chrisain Bolt</li>
-	    			<li><a href="https://www.instagram.com/djchrisainbolt"><img src="../img/ig-logo-email.png" id="instagram-logo">Instagram: djchrisainbolt</li>
-	    			<li><a href="https://www.twitter.com/djchrisainbolt"><img src="../img/twitter-logo.png" id="twitter-logo">Twitter: djchrisainbolt</li>
-	    			<li><a href="https://www.gmail.com"><img src="../img/gmail-logo.png" id="gmail-logo">Gmail:djchrisainbolt@gmail.com</li>
-	    		</ul>	    		
+	    	<section class="inquiries">
+	    			<h1 class="inquiries-title">Inquiries</h1>
+	    	     <form id="email-form" method="post" action="mailer.php">
+					<div class="f_name"> 
+						<p>First Name</p>
+						<input type="text" name="First_name" size="30">
+					</div>
+					<div class="l_name"> 
+						<p>Last Name</p>
+						<input type="text" name="Last_name" size="30">
+					</div>
+					<div class="e-mail">
+						<p>Email address</p>
+				    	<input type="text" name="email" size ="30" maxlength="45">
+				    </div>
+				    <div class="primary-phone">
+				    <p>Primary Phone</p>
+				    <input type="text" name="p_phone" maxlength="12">
+				    </div>
+				    <div class="secondary-phone">
+				    <p>Secondary Phone</p>
+				    <input type="text" name="s_phone" maxlength="12">
+				    </div>
+				    <div class="message">
+				    <p>Message</p>
+				    <textarea name="Message" cols="30" rows="8"> Enter Your Message Here...</textarea>
+				    </div>
+				    <div class="submit-button">
+				    <button type="submit">Submit</button>
+				    </div>	 
+				</form>   		
 	    	</section>
+	    	<div id="form-messages"></div>
 	    </div>
 
 	    <footer>
-	    	<div class="copywrite">
-	    		&copy; 2017 Christopher Harding. All rights reserved.
+	    	<div class="copywrite" style="float: left">
+	    		&copy; 2017 Christopher Harding. All rights reserved. 		
 	    	</div>
+
+	    			
+	    
 	    </footer>
 
 					<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
