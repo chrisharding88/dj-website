@@ -12,30 +12,51 @@ $(".thumbnail").on('click', function(event){
 
 $("#email-form").submit(function(event){
 	event.preventDefault();
-	var firstName = $(".f_name").find("input").val();
-	var lastName = $(".l_name").find("input").val();
-	var email = $(".e-mail").find("input").val();
-	var pPhone = $(".primary-phone").find("input").val();
-	var sPhone = $(".secondary-phone").find("input").val();
-	var message = $(".message").find("textarea").val();
+	var firstName = document.getElementByClass(".f_name");
+	var lastName = document.getElementByClass(".l_name");
+	var email = document.getElementByClass(".e-mail");
+	var pPhone = document.getElementByClass(".primary-phone");
+	var sPhone = document.getElementByClass(".secondary-phone");
+	var message = document.getElementByClass(".message");
 
-$(function () {
+ $(function () {
 	//Get the form
-	var form = $('#email-form');
+	 	if (firstName.value === ''){
+	 		alert ("Please enter your first name!")
+	 		return false;
+	 	}
 
-	// Get the messeages div
-	var formMessages=$('#form-messages')
-};
+	 	if (lastName.value === ''){
+	 		alert ("Please enter your last name!")
+	 		return false;
+	 	}
+	 	if (email.value === ''){
+	 		alert ("Please enter your email adress!")
+	 		return false;
+	 	}
+
+	 	if (pPhone.value === ''){
+	 		alert ("Please enter your primary phone number!")
+	 		return false;
+	 	}
+	 	
+	 	if (message.value === ''){
+	 		alert ("Please write your message!")
+	 		return false;
+	 	}
+
+	
+ });
 
 //Serialize the form data
 
 var formData = $("form").serialize();
-
+debugger;
 // Submit the form using AJAX
 	$.ajax({
 		type:"POST",
 		url: $("form").attr('action'),
-		data: formData;
+		data: formData
 
 	}).done(function(response){
 		$(formMessages).removeClass('error');

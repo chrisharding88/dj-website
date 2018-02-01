@@ -1,6 +1,15 @@
 <?php 
 
-// Only process POST reqeusts.
+// Accessing the form submission data
+$f_name = $_POST['First_name'];
+$l_name = $_POST['Last_name'];
+$email = $_POST['email'];
+$p_phone = $_POST['p_phone'];
+$s_phone = $_POST['s_phone'];
+$message = $_POST['message'];
+
+
+// Only process POST requests.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
@@ -23,16 +32,23 @@
         // Set the email subject.
         $subject = "New contact from $name";
 
+        //Send directly to the email
+        $to = "djchrisainbolt@gmail.com";
+
+
+
         // Build the email content.
-        $email_content = "Name: $name\n";
-        $email_content .= "Email: $email\n\n";
+        $email_content = "First Name: $f_name\n";
+        $email_content .= "Last Name: $l_name\n";
+        $email_content .= "Email: $email\n\n";     
+        $email_content .= "Primary Phone: $p_phone\n";
+        $email_content .= "Secondary Phone: $s_phone\n";
         $email_content .= "Message:\n$message\n";
 
-        // Build the email headers.
-        $email_headers = "From: $name <$email>";
+        
 
         // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
+        if (mail($to, $recipient, $subject, $email_content)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Thank You! Your message has been sent.";
